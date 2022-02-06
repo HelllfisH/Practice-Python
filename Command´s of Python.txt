@@ -1,0 +1,262 @@
+Python commands:
+
+price = 10
+price is an integer (a whole number without a decimal point) 
+
+rating = 4.9
+rating is a float (a number with a decimal point) 
+
+course_name = ‘Python for Beginners’
+course_name is a string (a sequence of characters) 
+
+is_published = True
+is_published is a boolean. Boolean values can be True or False
+
+
+--------------------------------------------------------------------------------------------------------------------
+ 
+first = "Marcos"
+last = "Rodriguez"
+
+- formatted string 
+msg = f"{first} [{last}] is a coder"
+
+Prefixsyour string with an F and then use curly braces to dinamic insert values into your strings
+
+- string concatenation
+message = first +" [" + last + "] is a coder"
+
+pirnt(....)
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+len function to count the numbers of characters in a string (general purpose function built into python)
+
+len()
+
+specifics functions (methods):
+
+course.upper()
+course.lower()
+course.title()
+course.find()
+course.replace() 
+
+the in operator:
+
+"...."       in      course 
+  Y	     Y         Y	
+  I	     I         I
+(caracters)  IN     (string)
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+variable:
+
+x = 3
+X = X + 3
+print(x)
+
+the result will be 13
+
+x = 10
+x += 3
+print(X)
+				augmented
+the result will be 13	      } assignment
+				operator
+x = 10
+x -= 3
+print(X)
+				augmented
+the result will be 7 	      } assignment	
+				operator
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+importance at an operation:
+
+x = (10 + 3) * 2 ** 2
+print (x)
+
+parenthesis
+exponentation 2**3
+multiplication or division
+addition or subtracion
+
+the result is 52
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+build in function
+ 
+x = 2.9
+print(round(x))
+
+the result is 3
+
+--------------------------------------------------------------------------------------------------------------------
+
+is_hot = True
+is_cole = False
+
+if is_hot:
+    print("It´s a hot day")
+    print("Drink plenty of water")
+elif is_cold:    
+    print("It´s a cold day")
+    print("Wear warm clothes")	
+else:
+    print("It´s a lovely day")
+
+print("Enjoy your day")
+
+
+the result is: It´s a hot day
+	       Drink plenty of water
+Enjoy your day
+
+--------------------------------------------------------------------------------------------------------------------
+
+Exersice:
+Price of a house $1M
+If buyer has good credit,
+   they need  to put down 10%
+Otherwise 
+   they need to put down 20%
+Print the down payment 	
+
+- - - - - - - - - - - -
+ 
+price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Down payment: ${down_payment}")
+
+--------------------------------------------------------------------------------------------------------------------
+
+logical operator in python:
+
+and
+
+or
+
+not
+
+--------------------------------------------------------------------------------------------------------------------
+
+Exersice:
+if name is less than 3 characters long
+   name must be at least 3 characters
+otherwise if it´s more than 50 characters
+   name can be a maximum of 50 characters
+otherwise 
+   name looks good!
+
+- - - - - - - - - - - - - - -
+ 
+name = "Jason"
+
+if len(name) < 3:
+    print("Name must be at least 3 characters.")
+elif len(name) > 50:
+    print("Name must be a maximun of 50 characters")
+else:
+    print("Name looks good!")
+
+--------------------------------------------------------------------------------------------------------------------	
+
+weight = int(input("Weight: "))
+unit = input("(L)bs or (K)g: ")
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"You are {converted} kilos")
+else:
+    converted = weight / 0.45
+    print(f"You are {converted} pounds")
+
+
+result:
+
+Weight: 72
+
+(L)bs or (K)g: L
+
+160 pounds
+
+--------------------------------------------------------------------------------------------------------------------	
+
+y = 1
+while y <= 5:
+    print("Uwu" * y)
+    y = y + 1
+print("Process finish")
+
+
+result: 
+Uwu
+UwuUwu
+UwuUwuUwu
+UwuUwuUwuUwu
+UwuUwuUwuUwuUwu
+Process finish
+
+--------------------------------------------------------------------------------------------------------------------	
+
+INTERESTED GAME PROGRAM:
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess: "))
+    guess_count += 1
+    if guess == secret_number:
+        print("You won!")
+        break
+else:
+    print("Sorry you failed")
+
+--------------------------------------------------------------------------------------------------------------------	
+
+command = ""
+started = False
+stopped = False
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print("Car is already started!")
+        else:
+            started = True
+            print("Car started... ready to go!")
+    elif command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car stopped.")
+    elif command == "help":
+        print("""
+ start - to start the car
+ stop - to stop the car
+ quit - to finish the game
+        """)
+    elif command == "quit":
+        print("Game over")
+        break
+    else:
+        print("Sorry I don´t understand that...")
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+	
